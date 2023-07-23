@@ -12,27 +12,51 @@
  * You don’t have to handle precision
  * You don’t have to handle the length modifiers
  */
-int _printf(const char *format, ...)
+int _printf(cont char *format, ...)
 {
-	int i, printed = 0, printed_chars = 0;
-	va_list list;
+	va_list parameters;
+    int characters_printed = 0;
+    char c;
+    char ch;
+    const char *str;
 
-	if (format == NULL)
-	return (-1);
+    va_start(parameters, format);
 
-	va_start(list, format);
+    while ((c = *format)) {
+        if (c == '%') {
+            // Handle conversion specifiers
+           format++;
+            switch (c) {
+                case 'c':
+                    ch = va_arg(parameters, int);
+                    putchar(ch);
+                    break;
+                case 's':
+                    str = va_arg(parameters, const char);
+                    if (str == NULL)
+                        str = "(null)";
+                    while (*str)
+                        {
+                        putchar(*str);
+                        str++;
+                        }
+                    break;
+                case '%':
+                    putchar('%');
+                    break;
+                default:
+                    putchar('%'); // Treat unknown conversion specifiers as literals
+                    putchar(c);
+                    break;
+            }
+            characters_printed++;
+        } else {
+            putchar(c); // Output non-'%' characters as-is
+            characters_printed++;
+        }
+        format++;
+    }
 
-	while (format && format[i] != '\0')
-	{
-		if (format[i] != '%')
-	{
-		printed = handle_print(format, &i)
-		if (printed == -1)
-				return (-1);
-			printed_chars += printed;
-	}
-	}
-	va_end(list);
-
-	return (printed_chars);
+    va_end(parameters);
+    return characters_printed;
 }
