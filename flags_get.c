@@ -28,15 +28,14 @@ int get_flags(const char *format, int *i)
 			break;
 	}
 
-	*i = curr_i - 1;
+	*i = curr__i - 1;
 
 	return (flags);
 }
-/**
- * It calculates the active flags based on the format string. The
- * format string is a character array that contains the format specifier
+ /** The format string is a character array that has the format specifier
  * characters along with optional flags. The supported flags are '-', '+', '0',
- * '#', and ' '. 
+ * '#', and ' '.
+ * It calculates the active flags based on the format string 
  * The function iterates through the format string from the
  * current index (i) and checks for the presence of any of these flags.
  * If a flag is found, the corresponding flag value is set in the flags variable
