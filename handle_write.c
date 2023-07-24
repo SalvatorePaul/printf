@@ -2,7 +2,6 @@
 
 /********************** WRITE HANDLE *********************/
 /**
- * This is part of the printf project done by Rhoderick and Paul
  * handle_write_char - Prints a string
  * @c: char types.
  * @buffer: Buffer array to handle print
@@ -10,14 +9,13 @@
  * @width: Get width.
  * @precision: precision specifier
  * @size: Size specifier
- *
  * Return: Number of chars printed.
+ * This is part of the printf project done by Rhoderick and Paul
  */
 
 int handle_write_char(char c, char buffer[],
 	int flags, int width, int precision, int size)
-{ 
-	/* char is stored at left and padded at buffer's right */
+{/* char is stored at left and padded at buffer's right */
 	int i = 0;
 	char padd = ' ';
 

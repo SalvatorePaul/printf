@@ -2,7 +2,6 @@
 
 /**************** PRINT POINTER *****************/
 /**
- * This is part of the printf project done by Paul and Rhoderick
  * print_pointer - Prints the value of a pointer variable
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
@@ -10,6 +9,7 @@
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
+ * This is part of the printf project done by Paul and Rhoderick
  * Return: Number of chars printed.
  */
 int print_pointer(va_list types, char buffer[],

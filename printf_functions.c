@@ -3,7 +3,6 @@
 /************************* PRINT CHAR *************************/
 
 /**
- * Authors: Paul and Rhoderick
  * print_char - Prints char
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
@@ -11,6 +10,7 @@
  * @width: Get width
  * @precision: Precision specification
  * @size: Size specifier
+ * Authors: Paul and Rhoderick
  * Return: Number of chars printed
  */
 int print_char(va_list types, char buffer[],

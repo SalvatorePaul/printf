@@ -3,16 +3,10 @@
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
- * printf - a function that produces output according to a format
+ * _printf - a function that produces output according to a format
  * @format: The format string containing the text and format specifiers
  * Return: the number of characters printed
  * (excluding the null byte used to end output to strings)
- *
- * You don’t have to reproduce the buffer handling of the C library printf function
- * You don’t have to handle the flag characters
- * You don’t have to handle field width
- * You don’t have to handle precision
- * You don’t have to handle the length modifiers
  * Authors: Paul and Rhoderick
  */
 
