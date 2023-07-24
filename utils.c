@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * This function is part of the printf project by Paul and Rhoderick
  * is_printable - Evaluates if a char is printable
  * @c: Char to be evaluated.
  * Return: 1 if c is printable, otherwise 0
+ * This function is part of the printf project by Paul and Rhoderick
  */
 
 int is_printable(char c)
