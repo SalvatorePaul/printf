@@ -63,7 +63,7 @@ int _printf(const char *format, ...)
 
 /**
  * print_buffer - prints out the content of the buffer if it exists
- * @buffer: Array of chars
+ * @buffer: Array of char in the buffer
  * @buff_ind: Index at which to add next char, represents the length.
  */
 void print_buffer(char buffer[], int *buff_ind)
