@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /************************* PRINT CHAR *************************/
 
@@ -23,12 +24,12 @@ int print_char(va_list types, char buffer[],
 /************************* PRINT A STRING *************************/
 /**
  * print_string - Prints string
- * @types: List a of arguments
+ * @types: List the type of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
- * @width: get width.
+ * @width: get the width
  * @precision: Precision specification
- * @size: Size specifier
+ * @size: Size of the specifier
  * Return: Number of chars printed
  */
 
@@ -168,7 +169,7 @@ int print_binary(va_list types, char buffer[],
 	UNUSED(size);
 
 	n = va_arg(types, unsigned int);
-	m = 2147483648; /* (2 ^ 31) */
+	m = 2147483648;
 	a[0] = n / m;
 	for (i = 1; i < 32; i++)
 	{
