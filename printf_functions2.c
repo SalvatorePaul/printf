@@ -121,7 +121,7 @@ int print_reverse(va_list types, char buffer[],
 	{
 		UNUSED(precision);
 
-		str = ")Null(";
+		str = "(Null)";
 	}
 	for (i = 0; str[i]; i++)
 		;
@@ -135,7 +135,7 @@ int print_reverse(va_list types, char buffer[],
 	}
 	return (count);
 }
-/********************** PRINT A STRING IN ROT13 ***********************/
+/********************** PRINTS A STRING IN ROT13 ***********************/
 /**
  * print_rot13string - Print a string in rot13.
  * @types: Lists of arguments
