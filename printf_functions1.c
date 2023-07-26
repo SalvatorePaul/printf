@@ -112,7 +112,7 @@ int print_hexa_upper(va_list types, char buffer[],
 
 /************ PRINT HEXX NUM IN LOWER OR UPPER *************/
 /**
- * print_hexa - Prints a hexadecimal number in lower or upper
+ * print_hexa - Prints a Hexadecimal number in lower or UPPER CASE
  * @types: Lists of arguments
  * @map_to: Array of values to map the number to
  * @buffer: Buffer array to handle print

@@ -1,19 +1,20 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * is_printable - Evaluates if a char is printable
+ * is_printable - Evaluates whether a char is printable
  * @c: Char to be evaluated.
  * Return: 1 if c is printable, otherwise 0
  * This function is part of the printf project by Paul and Rhoderick
  */
 
 int is_printable(char c)
-{
-	if (c >= 32 && c < 127)
-		return (1);
+	{
+		if (c >= 32 && c < 127)
+			return (1);
 
-	return (0);
-}
+		return (0);
+	}
 
 /**
  * append_hexa_code - Append ascci in hexadecimal code to buffer
@@ -29,7 +30,9 @@ int append_hexa_code(char ascii_code, char buffer[], int i)
 
 	/* The hexa format code is always 2 digits long */
 	if (ascii_code < 0)
+	{
 		ascii_code *= -1;
+	}
 
 	buffer[i++] = '\\';
 	buffer[i++] = 'x';
