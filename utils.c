@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * is_printable - Evaluates whether a char is printable
+ * is_printable - Evaluates whether a char is printable or not
  * @c: Char to be evaluated.
  * Return: 1 if c is printable, otherwise 0
  * This function is part of the printf project by Paul and Rhoderick
